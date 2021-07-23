@@ -1,0 +1,33 @@
+{
+  "name": "table-baseline.css",
+  "version": "1.0.0",
+  "description": "A good start for styling your forms",
+  "main": "src/baseline.form.css",
+  "style": "src/baseline.form.css",
+  "files": [
+    "LICENSE.md",
+    "src/baseline.table.css"
+  ],
+  "scripts": {
+    "changelog": "auto-changelog --commit-limit false --unreleased"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paceaux/form-baseline.git"
+  },
+  "keywords": [
+    "CSS",
+    "Typography",
+    "forms",
+    "baseline"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paceaux/table-baseline/issues"
+  },
+  "homepage": "https://github.com/paceaux/table-baseline#readme",
+  "author": "Frank M. Taylor",
+  "devDependencies": {
+    "auto-changelog": "^2.2.1"
+  }
+}

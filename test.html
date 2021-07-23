@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Form Baseline</title>
+	<link rel="stylesheet" href="src/baseline.form.css">
+</head>
+<body>
+<h1>A Baseline set of styles for form controls that's built on the typography baseline</h1>
+<hr />
+<form>
+	<fieldset>
+		<legend>Inputs</legend>
+		<fieldset>
+			<legend>Text Inputs</legend>
+			<label for="text">Text</label>
+			<input type="text" id="text" name="text" placeholder="some text" />
+			<label for="search">Search</label>
+			<input type="search" id="search" name="search" placeholder="where is carmen san diego" />
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="hunter2" />
+		</fieldset>
+
+		<fieldset>
+			<legend>Number Inputs</legend>
+
+			<label for="number">Number</label>
+			<input type="number" id="number" name="number" placeholder="1" min="0" max="1280" />
+			<label for="range">Range</label>
+			<input type="range" id="range" name="range" min=0 max=100 step=1 />
+		</fieldset>
+		<fieldset>
+			<legend>Location / contact inputs</legend>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="mom@aol.com" />
+			<label for="url">Url</label>
+			<input type="url" id="url" name="url" placeholder="www.excite.com" />
+			<label for="telephone">Telephone</label>
+			<input type="tel" id="telephone" name="telephone" placeholder="1 867 5309" />
+		</fieldset>
+		<fieldset>
+			<legend>Time Inputs</legend>
+			<label for="date">Date</label>
+			<input type="date" id="date" name="date" />
+			<label for="datetime-local">Local Datetime</label>
+			<input type="datetime-local" id="datetime-local" name="datetime-local" />
+			<label for="month">Month</label>
+			<input type="month" id="month" name="month" />
+			<label for="week">Week</label>
+			<input type="week" id="week" name="week" />
+			<label for="time">Time</label>
+			<input type="time" id="time" name="time" />
+		</fieldset>
+		<fieldset>
+			<legend>Radio Inputs</legend>
+			<label for="a">Star Wars</label>
+			<input type="radio" name="radios" id="a">
+			<label for="b">Star Trek</label>
+			<input type="radio" name="radios" id="b">
+			<label for="c">Starship Troopers</label>
+			<input type="radio" name="radios" id="c">
+		</fieldset>
+		<fieldset>
+			<legend>Checkboxes</legend>
+			<label for="checkbox">Nope?</label>
+			<input type="checkbox" name="checkbox" id="checkbox">
+		</fieldset>
+		<fieldset>
+			<legend>Colors and files</legend>
+			<label for="color">Color</label>
+			<input type="color" name="color" id="color" />
+			<label for="file">File</label>
+			<input type="file" name="file" id="file" />
+		</fieldset>
+	</fieldset>
+
+	<fieldset>
+		<legend>Select options</legend>
+		<label for="simple-select">Simple Select</label>
+		<select id="simple-select" name="simple-select">
+			<option>Dog</option>
+			<option>Cat</option>
+		</select>
+
+		<label for="multi-select">Multiple Select</label>
+		<select id="multi-select" name="multi-select" multiple size="2">
+			<option>Dog</option>
+			<option>Cat</option>
+			<option>Goldfish</option>
+			<option>Bird</option>
+			<option>Snake</option>
+		</select>
+
+		<label for="complex-select">Complex Select</label>
+		<select id="complex-select" name="complex-select">
+			<optgroup label="Canine">
+				<option>Canus Lupus</option>
+				<option>Canus rufus</option>
+				<option>Canus familiaris</option>
+			</optgroup>
+			<optgroup label="Felinae">
+				<option>Felis catus</option>
+				<option>Felis Silvestris</option>
+				<option>Felis Margarita</option>
+			</optgroup>
+		</select>
+		<label for="input-list">Input with List</label>
+		<input list="list-options" id="input-list" name="input-list" />
+
+		<datalist id="list-options">
+			<option value="Dwarves">
+			<option value="Elves">
+			<option value="Wizards">
+			<option value="Robots">
+			<option value="Ted">
+		</datalist>
+	</fieldset>
+
+	<fieldset>
+		<legend>Input Validations and states</legend>
+		<fieldset>
+			<legend>Disabled and required inputs</legend>
+			<label for="disabled-input">Text Input</label>
+			<input type="text" id="disabled-input" name="disabled-input" placeholder="can't touch this" disabled />
+			<label for="required-input">Required Text Input</label>
+			<input type="text" id="required-input" name="disabled-input" placeholder="please touch this" required />
+		</fieldset>
+		<fieldset disabled>
+			<legend>Disabled fieldset</legend>
+			<label for="disableder-input">Input disabled by fieldset</label>
+			<input type="text" id="disableder-input" name="disabled-input" placeholder="can't touch this" />
+			<label for="disableder-textarea">Textarea disabled by fieldset</label>
+			<textarea id="disableder-textarea" name="disableder-textarea"></textarea>
+
+		</fieldset>
+	</fieldset>
+	<fieldset>
+		<legend>Text areas</legend>
+		<label for="textarea">Textarea</label>
+		<textarea id="textarea" name="textarea"></textarea>
+	</fieldset>
+	<fieldset>
+		<legend>Buttons</legend>
+		<input type="button" value="Input button" />
+		<input type="submit" value="Input Submit" />
+		<input type="reset" value="Input Reset" />
+
+		<button type="submit">Button Submit</button>
+		<button type="reset">Button Reset</button>
+	</fieldset>
+</form>
+</body>
+</html>
