@@ -92,9 +92,12 @@ form {
     --controlColorAttention: var(--colorWarmer, rgb(168, 118, 0));
 }
 
+/* intentionally separate the settings from the application for readability */ 
+/* stylelint-disable no-duplicate-selectors */
 form {
     font-family: var(--formBaseFontFamily);
 }
+/* stylelint-enable no-duplicate-selectors */
 
 fieldset {
 	padding: var(--controlGroupPadding);
