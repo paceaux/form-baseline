@@ -133,8 +133,11 @@ If you have commit access, please follow this process for merging patches, minor
 
 Semver is a widely accepted method for deciding how version numbers are incremented in a project. Versions are written as MAJOR.MINOR.PATCH.
 
-Any change to CSS rules is considered backwards-breaking and will result in a new major release. No changes to CSS _rules_ can add functionality in a backwards-compatible manner, therefore no changes are considered minor. 
+Almost any change to CSS rules is considered backwards-breaking and will result in a new major release. No changes to CSS _rules_ can add functionality in a backwards-compatible manner, therefore almost no changes are considered minor.
 
-_Adding_ CSS Variables (without applying them to any rules) is considered a minor release. Changes to documentation or the test.html file also qualify as a minor release. 
+The only exceptions are:
 
-Corrections to documentation count as a patch. 
+- _Adding_ CSS Variables (without applying them to any rules). This considered a minor release.
+- Changes to documentation or the test.html file. This qualifies as a minor release.
+- Changes to the linter or tester. This qualifies as a minor release.
+- _Corrections_ to documentation count as a patch.

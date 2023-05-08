@@ -29,8 +29,8 @@ form {
 	/*=====
         #Font #FontFamilies #Typeface
     =====*/
-    --formBaseFontFamily: var(--baseFontFamily,  'Georgia','Times New Roman', 'serif');
-    --formTitleFontFamily: var(--titleFontFamily, 'Helvetica', 'Arial', 'sans-serif');
+    --formBaseFontFamily: var(--baseFontFamily,  "Georgia","Times New Roman", "serif");
+    --formTitleFontFamily: var(--titleFontFamily, "Helvetica", "Arial", "sans-serif");
 
     /*=====
         #Border
@@ -92,15 +92,18 @@ form {
     --controlColorAttention: var(--colorWarmer, rgb(168, 118, 0));
 }
 
+/* intentionally separate the settings from the application for readability */ 
+/* stylelint-disable no-duplicate-selectors */
 form {
     font-family: var(--formBaseFontFamily);
 }
+/* stylelint-enable no-duplicate-selectors */
 
 fieldset {
 	padding: var(--controlGroupPadding);
-	background-color: var(--controlGroupBackgroundColor);
 	border: var(--controlGroupBorderWidth) var(--controlGroupBorderStyle) var(--controlGroupBorderColor);
 	border-radius: var(--controlCornerSize);
+	background-color: var(--controlGroupBackgroundColor);
 	margin: .618em .618rem;
 }
 
@@ -117,10 +120,10 @@ legend {
 	font-size: var(--formLabelSize);
 	line-height: 1.2;
 	padding: .35em .5rem;
-	margin: .618em 0;
 	border: var(--controlGroupBorderWidth) var(--controlGroupBorderStyle) var(--controlGroupBorderColor);
 	border-radius: var(--controlGroupCornerSize);
 	background-color: var(--controlGroupBackgroundColor);
+	margin: .618em 0;
 }
 
 label {
@@ -141,8 +144,8 @@ textarea {
 	border-color: var(--controlBorderColor);
 	border-radius: var(--controlCornerSize);
 	background-color: var(--controlBackgroundColor);
-	transition: all 0.3s ease-in-out;
 	outline: none;
+	transition: all 0.3s ease-in-out;
 }
 
 input,
@@ -150,8 +153,8 @@ button,
 textarea,
 option,
 label {
-	padding-left: var(--controlHorzPadding);
 	padding-right: calc(var(--controlHorzPadding) / 2);
+	padding-left: var(--controlHorzPadding);
 }
 
 optgroup {
@@ -167,8 +170,8 @@ select:focus,
 textarea:hover,
 textarea:focus {
 	color: var(--controlColorInterest);
-	background-color: var(--controlBackgroundColorInterest);
 	border-color: var(--controlBorderColorInterest);
+	background-color: var(--controlBackgroundColorInterest);
 }
 
 input:active,
@@ -176,8 +179,8 @@ button:active,
 select:active,
 textarea:active {
 	color: var(--controlColorActive);
-	background-color: var(--controlBackgroundColorActive);
 	border-color: var(--controlBorderColorActive);
+	background-color: var(--controlBackgroundColorActive);
 }
 
 button:focus-visible,
@@ -197,8 +200,8 @@ input:disabled,
 select:disabled,
 textarea:disabled {
 	color: var(--controlColorDeactivated);
-	background-color: var(--controlBackgroundColorDeactivated);
 	border-color: var(--controlBorderColorDeactivated);
+	background-color: var(--controlBackgroundColorDeactivated);
 }
 
 [type="range"] {
