@@ -1,7 +1,8 @@
 /*==========
 #Form #Variables
 ==========*/
-form {
+form,
+search {
     /*=====
         #Text #Size
     =====*/
@@ -94,7 +95,8 @@ form {
 
 /* intentionally separate the settings from the application for readability */ 
 /* stylelint-disable no-duplicate-selectors */
-form {
+form,
+search {
     font-family: var(--formBaseFontFamily);
 }
 /* stylelint-enable no-duplicate-selectors */
