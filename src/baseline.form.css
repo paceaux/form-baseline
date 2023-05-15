@@ -59,7 +59,7 @@ search {
     /*=====
         #Colors
     =====*/
-    --controlColor:  var(--colorNeutralDark, rgb(165,165,165));
+    --controlColor:  var(--colorNeutralDark, rgb(110,110,110));
     --controlGroupColor: var(--colorNeutralDark, rgb(110,110,110));
     --controlBackgroundColor: rgb(255, 255, 255);
     --controlGroupBackgroundColor: transparent;
