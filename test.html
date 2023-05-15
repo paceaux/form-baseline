@@ -9,6 +9,7 @@
 <body>
 <h1>A Baseline set of styles for form controls that's built on the typography baseline</h1>
 <hr />
+<h2>A Form and inputs</h2>
 <form>
 	<fieldset>
 		<legend>Inputs</legend>
@@ -150,5 +151,24 @@
 		<button type="reset">Button Reset</button>
 	</fieldset>
 </form>
+<h2>A Search instead of a form</h2>
+<search>
+	<fieldset>
+		<legend>Inputs</legend>
+		<label for="query">
+			Find and filter your query
+			<input type="search" id="query">
+		</label>
+		<label for="exact-only">
+			<input type="checkbox" id="exact-only">
+			Exact matches only
+		</label>
+	</fieldset>
+	<fieldset>
+		<legend>Buttons</legend>
+		<button type="submit">Go Search</button>
+		<button type="reset">Whoops, reset!</button>
+	</fieldset>
+</search>
 </body>
 </html>

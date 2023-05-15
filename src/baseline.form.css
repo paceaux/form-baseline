@@ -1,7 +1,7 @@
 /*==========
-#Form #Variables
+#Form #Search #Variables
 ==========*/
-form {
+form, search {
     /*=====
         #Text #Size
     =====*/
@@ -92,7 +92,7 @@ form {
     --controlColorAttention: var(--colorWarmer, rgb(168, 118, 0));
 }
 
-form {
+form, search {
     font-family: var(--formBaseFontFamily);
 }
 
